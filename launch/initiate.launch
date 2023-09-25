@@ -1,0 +1,5 @@
+<launch>
+    <node name="cadc_point" pkg="CADC" type="CADC" respawn_delay="5" output="screen" />
+    <node name="takeoff" pkg="CADC" type="takeoff" output="screen"/>
+    <node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" respawn_delay="5" output="screen" />
+</launch>
